@@ -1,0 +1,27 @@
+@import "theme";
+@import "break-points";
+
+.usersContainer {
+  width: 100%;
+
+  @media screen and (min-width: $md) {
+    width: 750px;
+  }
+
+  @media screen and (min-width: $lg) {
+    width: 970px;
+  }
+
+  @media screen and (min-width: $xl) {
+    width: 1170px;
+  }
+}
+
+.rowUsers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}

@@ -1,0 +1,50 @@
+@import "theme";
+@import "break-points";
+
+.btn {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 18px 39px;
+  background: $accent-color;
+  justify-content: normal;
+  align-items: normal;
+  transition: 0.2s background;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: #E62D2D;
+}
+
+.downloadContainer {
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.downloadContainer > h3 {
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.downloadContainer > p {
+  color: #2d3033;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 22.4px;
+}
+
+.downloadContainer > .btn {
+  margin-top: 40px;
+}

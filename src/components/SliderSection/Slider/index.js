@@ -1,4 +1,6 @@
 import slideImg from './components/Slide';
+import './styles.scss';
+
 import {createRadioBtnElem, createSliderInfoContainerElem, createSliderNameElem, 
 		createSliderDescriptionElem, createSliderImgElem} from './htmlComposer';
 

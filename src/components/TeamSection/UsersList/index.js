@@ -19,7 +19,7 @@ function createUserListItemElem(user) {
 
 function createUserImageElem(user) {
     const userImageContainer = document.createElement('div');
-	const userPicture = createPicture(user.profilePicture, 'https://chapters.theiia.org/tallahassee/About/ChapterOfficers/z_Not_Avail.png', 'profile picture', [] );
+	const userPicture = createPicture(user.profilePicture, 'https://grdiocese.org/wp-content/uploads/2019/04/schneider-ronald.jpg', 'profile picture', [] );
     userImageContainer.appendChild(userPicture);
     return  userImageContainer;
 }
@@ -28,6 +28,7 @@ function createUserContentElem(user) {
     const userContentElem = document.createElement('div');
     userContentElem.classList.add('userContent');
     userContentElem.appendChild(createUserNameElem(user));
+    userContentElem.appendChild(createUserPositionElem(user));
     userContentElem.appendChild(createUserDescriptionElem(user));
     return userContentElem;
 }
@@ -36,6 +37,13 @@ function createUserNameElem(user) {
     const userNameElem = document.createElement('h4');
     userNameElem.classList.add('userName');
     userNameElem.innerText = user.name;
+    return userNameElem;
+}
+
+function createUserPositionElem({position}) {
+    const userNameElem = document.createElement('h5');
+    userNameElem.classList.add('userPosition');
+    userNameElem.innerText = `${position}`;
     return userNameElem;
 }
 

@@ -1,9 +1,5 @@
 import '../sass/style.scss';
 
-// window.onresize = function() {
-//     toggleMenuShow();
-// };
-
 let headerElem = document.querySelector('#pageHeader');
 window.addEventListener('scroll', toggleClassOnScroll.bind(headerElem, 10));
 function toggleClassOnScroll(pxAmount) {

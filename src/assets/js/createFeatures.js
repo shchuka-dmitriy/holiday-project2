@@ -13,11 +13,6 @@ async function loadFeatures(url) {
 
 loadFeatures('./data/features.json');
 
-// fetch('./data/features.json')
-//     .then(response => response.json())
-//     .then( appendFeaturesToList )
-//     .catch(console.error);
-
 function appendFeaturesToList (features) {
     const featuresListElem = document.getElementById('rowFeaturesContainer');
 
@@ -28,8 +23,6 @@ function appendFeaturesToList (features) {
     )
 }
 
-
-/*вынести в отдельгую функцию всё что ниже, например в makeHtmlComponents*/
 function createFeatureCardElem(feature) {
     const featureListItem = createFeatureListItemElem(feature);
     featureListItem.appendChild( createFeatureImageElem(feature));

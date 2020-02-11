@@ -1,5 +1,10 @@
 import { setSlider } from '../../index';
 
+/**
+ *
+ * @param slidesListLength
+ * @returns {HTMLDivElement}
+ */
 export default function(slidesListLength) {
     const sliderWrapper = document.createElement('div');
     for (let i = 0; i < slidesListLength; i++) {

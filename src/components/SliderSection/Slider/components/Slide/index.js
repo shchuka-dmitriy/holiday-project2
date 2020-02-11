@@ -1,5 +1,10 @@
 import { createImage } from '../../../../../utils';
 
+/**
+ *
+ * @param imgSrc
+ * @returns {HTMLImageElement}
+ */
 export default function(imgSrc) {
-    return createImage(imgSrc, 'https://www.radiozdk.com/wp-content/uploads/2016/03/no-image-available.jpg');
+    return createImage(imgSrc, 'https://www.wallpaperama.com/post-images/forums/201202/19p-8611-godaddy-not-available.gif');
 }
